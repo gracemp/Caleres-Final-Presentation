@@ -111,7 +111,7 @@
             </ul>
             </div>
     
-    <div id="arrows1" class="step" data-x="1000" data-y="900" data-scale="3">
+    <div id="arrows1" class="step hiddenStuff" data-x="1000" data-y="900" data-scale="3">
         <img src = "arrow1.png">
         <ul style = " color:white; font-size: 36px;">
             <li> language used to pull data from PRODN, MarketWorks, and NPD</li>
@@ -119,7 +119,7 @@
         </ul>
         
     </div>
-        <div id="arrows2" class="step" data-x="1000" data-y="900" data-scale="3">
+        <div id="arrows2" class="step hiddenStuff" data-x="1000" data-y="900" data-scale="3">
         <img src = "arrow2.png">
        <ul style = " color:white; font-size: 36px;">
 		<li>- a functional computer language designed for big data literacy and manipulation</li>
@@ -128,7 +128,7 @@
         
     </div>
     
-    <div id="arrows3" class="step" data-x="1000" data-y="900" data-scale="3">
+    <div id="arrows3" class="step hiddenStuff" data-x="1000" data-y="900" data-scale="3">
         <img src = "arrow3.png">
        <ul style = " color:white; font-size: 36px;">
 		<li>- language of the internet- every page is constructed from these.</li>
@@ -186,7 +186,7 @@ impress().init();
       $("body").css({"background-image" : "url(\"shoe.png\")", "background-size" : "cover"});
   });
    $("#titlepage").get(0).addEventListener("impress:stepleave", function () {
-     $("body").css({"background-color" : "black"});
+     $("body").css({"background-color" : "black", "background-image" : "url('')"});
   });
     $("#agenda").get(0).addEventListener("impress:stepenter", function () {
      $("body").css({"background-image" : "url(\"eric.gif\")", "background-repeat": "repeat"});
@@ -221,6 +221,26 @@ impress().init();
   $("#proj_intro").get(0).addEventListener("impress:stepleave", function () {
      $("body").css({"background-image" : "None", "background-color" : "black"});
   });
+  
+    $("#arrows1").get(0).addEventListener("impress:stepenter", function () {
+     $("#arrows1").removeClass('hiddenStuff');
+  });
+     $("#arrows1").get(0).addEventListener("impress:stepleave", function () {
+     $("#arrows1").addClass('hiddenStuff');
+  });
+       $("#arrows2").get(0).addEventListener("impress:stepenter", function () {
+     $("#arrows2").removeClass('hiddenStuff');
+  });
+     $("#arrows2").get(0).addEventListener("impress:stepleave", function () {
+     $("#arrows2").addClass('hiddenStuff');
+  });
+       $("#arrows3").get(0).addEventListener("impress:stepenter", function () {
+     $("#arrows3").removeClass('hiddenStuff');
+  });
+     $("#arrows3").get(0).addEventListener("impress:stepleave", function () {
+     $("#arrows3").addClass('hiddenStuff');
+  });
+   
  
 </script>
 
