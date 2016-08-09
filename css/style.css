@@ -167,7 +167,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 900px;
+    width: 1200px;
     padding: 40px;
     margin: 20px auto;
 
@@ -720,17 +720,21 @@ div.transbox p {
  #grph{
 	 width: 110%;
  }
+
 #left{
-    float: left;
-    width: 30%;
-    overflow: hidden;
+    flex: 0 0 45%;
 }
 #right{
-    margin-right: 30%;
-    float:right;
+   flex:1;
+    padding-left:5%
 }
 
 .hiddenStuff{
 	visibility:hidden;
 	
+}
+
+.caption{
+    display:block;
+    margin-top: 0px;
 }
